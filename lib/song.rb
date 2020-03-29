@@ -19,14 +19,12 @@ class Song
   end 
   
   def self.genre
-    unique_genre = []
-    unique_genre << @@genres.uniq
+    unique_genre = @@genres.uniq
     unique_genre
   end 
   
   def self.artist 
-    unique_artist = []
-    unique_artist << @@artists.uniq
+    unique_artist = @@artists.uniq
     unique_artist
   end
   
