@@ -17,7 +17,7 @@ class Song
   end 
   
   def self.genre
-    @@genres = @@genres.uniq 
+    unique = @@genres.uniq 
   end 
   
 end 
