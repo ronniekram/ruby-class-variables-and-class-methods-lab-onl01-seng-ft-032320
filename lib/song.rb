@@ -41,7 +41,15 @@ def self.genre_count
 end
   
   def self.artist_count
-    @@artists.to_histogram
+    num_of_artist = Hash.new
+    @@artists.each do |artist|
+      if num_of_artist[artist]
+        num_of_artist[artist] += 1
+      else
+        num_of_artist[artist] = 1
+      end
+    end
+      return num_of_artist
   end
   
 end 
