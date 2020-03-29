@@ -18,7 +18,8 @@ class Song
   
   def self.genre
     unique = []
-    unique << @@genres.uniq 
+    unique << @@genres.uniq
+    unique
   end 
   
 end 
