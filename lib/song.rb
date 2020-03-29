@@ -28,6 +28,8 @@ class Song
     unique_artist = []
     unique_artist << @@artists.uniq
     unique_artist
-  end 
+  end
+  
+  
   
 end 
