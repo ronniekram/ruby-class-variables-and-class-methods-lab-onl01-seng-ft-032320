@@ -28,9 +28,17 @@ class Song
     unique_artist
   end
   
-  def self.genre_count
-    Hash[@@genres.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
-  end
+def self.genre_count
+    num_of_genres = Hash.new
+    @@genres.each do |genre|
+      if num_of_genres[genre]
+        num_of_genres[genre] += 1
+      else
+        num_of_genres[genre] = 1
+      end
+    end
+      return num_of_genres
+end
   
   def self.artist_count
     @@artists.to_histogram
