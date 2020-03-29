@@ -28,10 +28,12 @@ class Song
     unique_artist
   end
   
-  def self.genre_count 
-  end 
+  def self.genre_count
+    @@genres.to_histogram 
+  end
   
   def self.artist_count
+    @@artists.to_histogram
   end
   
 end 
