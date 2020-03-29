@@ -14,4 +14,8 @@ class Song
     @@count
   end 
   
+  def self.genre 
+    
+  end 
+  
 end 
